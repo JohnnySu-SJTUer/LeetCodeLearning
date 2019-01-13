@@ -18,7 +18,6 @@ class Solution:
         root.right = self.sortedArrayToBST(self, nums[mid+1:])
         return root
 
-
 def treeNodeToString(root):
     if not root:
         return "[]"
