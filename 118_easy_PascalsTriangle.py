@@ -15,7 +15,6 @@ class Solution:
         #             resList[i].append(1)
         #         else:
         #             resList[i].append(resList[i-1][j-1]+resList[i-1][j])
-        #
         # return resList
 
         # 52 ms, faster than 95.25%
