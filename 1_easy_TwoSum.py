@@ -3,6 +3,7 @@ class Solution:
     def twoSum(self, num, target):
         dictMap = {}
         for index, value in enumerate(num):
+            print(index,value)
             if target - value in dictMap:
                 return dictMap[target - value], index
             dictMap[value] = index
