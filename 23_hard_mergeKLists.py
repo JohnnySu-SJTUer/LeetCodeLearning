@@ -13,9 +13,8 @@ class Solution:
             k=(length+1)//2
             for i in range(int(length//2)):
                 lists[i]=self.mergeTwoLists(lists[i],lists[i+k])
-            n=k
+            length=k
         return lists[0]
-
 
     def mergeTwoLists(self,list1:ListNode,list2:ListNode):
         dummy=ListNode(-1)
@@ -36,5 +35,10 @@ class Solution:
 
 
 s=Solution()
-lists=ListNode(0)
+ln1 = ListNode(1)
+ln1.next = ListNode(10)
+ln2 = ListNode(2)
+ln2.next = ListNode(20)
+lists=[ln1,ln2]
+print(len(lists))
 print(s.mergeKLists(lists))
